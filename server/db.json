@@ -1,0 +1,44 @@
+{
+  "contacts": [
+    {
+      "fullname": "Abolfazl",
+      "photo": "",
+      "Mobile": "00000000000",
+      "email": "abolfazl.gt05@gmail.com",
+      "job": "Programmer",
+      "group": "1",
+      "id": 1
+    },
+    {
+      "fullname": "cdscdscsdc",
+      "photo": "xsaxasxaxsa",
+      "mobile": "05454254245245",
+      "email": "abolfazl.gt05@gmail.com",
+      "job": "cscsacsccca",
+      "group": "1",
+      "id": 2
+    }
+  ],
+  "groups": [
+    {
+      "id": "1",
+      "name": "partner"
+    },
+    {
+      "id": "2",
+      "name": "friend"
+    },
+    {
+      "id": "3",
+      "name": "family"
+    },
+    {
+      "id": "4",
+      "name": "service"
+    },
+    {
+      "id": "5",
+      "name": "Ashna"
+    }
+  ]
+}
