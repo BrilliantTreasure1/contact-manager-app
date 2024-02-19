@@ -1,12 +1,16 @@
+import { useContext } from "react";
 import React from "react";
 import { Link } from "react-router-dom";
 
+import { contactContext } from "../context/contactContext";
 import Cont from "./Contact/cont"   
 import { CurrentLine, Orange, Pink ,} from "../helpers/color"
 
 
 
-const Contacts = ({cont}) => {
+const Contacts = () => {
+    const { deleteContact , contacts} = useContext(contactContext)
+
     return (
         <>
         <section className="container">
@@ -30,8 +34,8 @@ const Contacts = ({cont}) => {
         <section className="container">
             <div className="row">
                 {
-                    cont.length > 0 ? cont.map( c => (
-                       <Cont key={c.id} contact={c} /> 
+                    contacts.length > 0 ? contacts.map( c => (
+                       <Cont key={c.id} contact={c} confirmDelete={() => deleteContact(c.id , c.fullname)} /> 
                     )) :
                         (
                         <div className="text-center py-5" style={{backgroundColor: CurrentLine}}>
