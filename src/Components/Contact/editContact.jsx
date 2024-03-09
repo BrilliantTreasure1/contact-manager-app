@@ -1,6 +1,6 @@
 import { useEffect, useState ,useContext } from "react";
-
 import { Link, useNavigate, useParams } from "react-router-dom";
+import toast,{ Toaster } from "react-hot-toast";
 
 import { contactContext } from "../../context/contactContext";
 
@@ -49,6 +49,8 @@ const EditContact = () => {
       const { data , status } = await updateContact(contact, contactId);
       if (status === 200) {
         navigate("/contacts")
+        toast.success("مخاطب با موفقیت ویرایش شد",{icon:"💥"})
+
         const allContacts = [...contacts];
         const contactIndex = [allContacts.findIndex(
             (c) => c.id === parseInt(...data)

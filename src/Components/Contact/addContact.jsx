@@ -10,14 +10,14 @@ const AddContact = () => {
   return (
         <>
           <section className="p-3">
-            <img
+            <img 
               src={require("../../assets/man-taking-note.png")}
               height="400px"
               style={{
                 position: "absolute",
                 zIndex: "-1",
                 top: "130px",
-                left: "100px",
+                left: "500px",
                 opacity: "50%",
               }}
             />
@@ -28,7 +28,7 @@ const AddContact = () => {
                     className="h4 fw-bold text-center"
                     style={{ color: Green }}
                   >
-                    ساخت مخاطب جدید
+                    Create new Contact
                   </p>
                 </div>
               </div>
@@ -43,7 +43,7 @@ const AddContact = () => {
                         className="form-control"
                         value={contact.fullname}
                         onChange={onContactChange}
-                        placeholder="FullName"
+                        placeholder="نام و خانوادگی"
                         required={true}
                       />
                     </div>

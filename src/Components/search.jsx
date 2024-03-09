@@ -12,7 +12,7 @@ const SearchContact = ({query , search}) => {
             <span className="input-group-text" id="basic-addont"
              style={{backgroundColor : Purple}}>
                 
-                <i className="fas fa-search"></i>
+                <i class="fa fa-blind" aria-hidden="true"></i>
             </span>
             <input type="text" value={contactQuery.text} onChange={contactsSearch}
              className="form-control" placeholder="search contact" aria-label="Search" />

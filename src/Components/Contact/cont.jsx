@@ -51,7 +51,7 @@ const cont = ({ contact, confirmDelete }) => {
                 className="btn my-1"
                 style={{ backgroundColor: Cyan }}
               >
-                <i class="fa-solid fa-pen-line"></i>
+                <i class="fa fa-magic" aria-hidden="true"></i>
               </Link>
               <button
                 className="btn my-1"

@@ -1,5 +1,7 @@
 body {
     background-color: #252a36;
+    font-family: "vazir" , "tahoma" , "ubuntu" !important;
+
 }
 
 input[type="text"]::-webkit-input-placeholder,

@@ -1,6 +1,7 @@
 import {useState , useEffect} from 'react';
 import { Routes , Route , Navigate , useNavigate } from "react-router-dom"
 import { confirmAlert } from "react-confirm-alert";
+import toast,{ Toaster } from 'react-hot-toast';
 
 
 import { contactContext } from './context/contactContext'
@@ -46,6 +47,7 @@ const App = () => {
     try {
       const{status} = await creatContact(Contact)
       if(status === 201) {
+        toast.success("مخاطب با موفقیت ساخته شد",{icon:"👽"})
         setContact({})
         navigate("/contacts")
       }
@@ -103,7 +105,8 @@ const App = () => {
       const response = await deletContact(contactId);
       if (response) {
         const { data: contactsData } = await getAllContact();
-
+        
+        toast.error("مخاطب با موفقیت حذف شد" , {icon : "💣"})
         setContacts(contactsData);
       }
     } catch (err) {
@@ -137,7 +140,7 @@ const App = () => {
       contactsSearch:contactSearch,
     }}>
       <div className={"app"}>
-
+        <Toaster />
         <Navbar />
 
       <Routes>

@@ -12,8 +12,8 @@ const Navbar = () => {
                 <div className="col">
                     
                     <div className="navbar-brand">
-                        <i className="fa fa-id-badge"></i>
-                         <span style={{color: Purple}}><b> contact manager</b></span>{"  "}
+                        <i className="fa fa-id-badge"></i> {"  "}
+                         <span style={{color: Purple}}><b>contact manager </b></span>{"  "}
                        <b>web application</b> 
                     </div>
                     
